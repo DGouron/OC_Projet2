@@ -1,5 +1,22 @@
+.debug {
+  border: 1px solid red;
+}
+* {
+  font-family: "Railway", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: #000000;
+}
 html,
 body {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0 3%;
+}
+body {
+  background-color: #f2f2f2;
+}
+header,
+main,
+footer {
+  width: 100%;
 }

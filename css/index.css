@@ -1,5 +1,5 @@
 .debug {
-  border: 1px solid red;
+  border: 0px solid red;
 }
 * {
   font-family: "Railway", sans-serif;
@@ -19,4 +19,17 @@ header,
 main,
 footer {
   width: 100%;
+}
+/*Breakpoint for laptop*/
+@media screen and (max-width: 992px) {
+  body {
+    padding: 0;
+  }
+}
+/*Breakpoint for mobile*/
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    padding: 0;
+  }
 }

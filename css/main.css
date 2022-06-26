@@ -1,0 +1,15 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+main > section {
+  margin-top: 20px;
+}
+h1 {
+  font-size: var(--title-font-size);
+  line-height: 1%;
+}
+h2 {
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--subtitle-font-weight);
+}

@@ -1,0 +1,16 @@
+* {
+  --primary-bg-color: #f2f2f2;
+  --secondary-bg-color: #0065fc;
+
+  --default-font-size: 12px;
+  --title-font-size: 17px;
+  --subtitle-font-size: 15px;
+  --subtitle-font-weight: 400;
+
+  --search-border-radius-size: 15px;
+  --searchbar-height: 50px;
+  --searchbar-color: black;
+
+  /*Only for debug*/
+  --debug-border: 1px solid red;
+}

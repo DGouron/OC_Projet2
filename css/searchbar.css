@@ -1,0 +1,39 @@
+form > * {
+  margin: 0;
+  padding: 0;
+  margin-right: -7px;
+  height: var(--searchbar-height);
+  border: none;
+}
+main section form button {
+  width: var(--searchbar-height);
+  border-radius: var(--search-border-radius-size) 0px 0px
+    var(--search-border-radius-size);
+  background-color: #eee;
+}
+main section form input {
+  border-radius: 0px var(--search-border-radius-size)
+    var(--search-border-radius-size) 0px;
+  background-color: var(--primary-bg-color);
+  padding-left: 20px;
+  color: var(--searchbar-color);
+  font-size: calc(5px + var(--default-font-size));
+  border-radius: 0;
+}
+main section form input:focus {
+  outline: none;
+}
+main section form input::placeholder {
+  color: var(--searchbar-color);
+  opacity: 0.8;
+  font-weight: 700;
+}
+main section form button[type="submit"] {
+  width: 120px;
+  font-size: calc(1px + var(--default-font-size));
+  font-weight: 800;
+  color: white;
+  border-radius: 0px var(--search-border-radius-size)
+    var(--search-border-radius-size) 0px;
+  background-color: var(--secondary-bg-color);
+}

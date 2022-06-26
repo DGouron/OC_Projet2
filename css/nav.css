@@ -5,7 +5,7 @@ nav {
   width: 250px;
   height: 50px;
 }
-a {
+nav a {
   padding: 50px 40px 0 40px;
   text-decoration: none;
   font-size: 16px;
@@ -13,7 +13,7 @@ a {
   font-style: normal;
 }
 nav :nth-child(1),
-a:hover {
+nav a:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
@@ -25,14 +25,14 @@ a:hover {
   nav {
     width: 100%;
   }
-  a {
+  nav a {
     padding: 0;
     width: 50%;
     text-align: center;
     border-bottom: 3px solid rgba(0, 0, 0, 0.03);
   }
   nav :nth-child(1),
-  a:hover {
+  nav a:hover {
     border-top: none;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;

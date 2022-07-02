@@ -1,6 +1,7 @@
 * {
-  --primary-color: #f2f2f2;
-  --secondary-color: #0065fc;
+  --primary-color: #F2F2F2;
+  --secondary-color: #0065FC;
+  --tertiary-color: #DEEBFF;
 
   --default-font-size: 12px;
   --title-font-size: 17px;
@@ -11,6 +12,9 @@
   --search-border-radius-size: 15px;
   --searchbar-height: 50px;
   --searchbar-color: black;
+
+  --filter-height: 40px;
+  --filter-icone-width: 40px;
 
   /*Only for debug*/
   --debug-border: 1px solid red;

@@ -2,7 +2,6 @@ header {
   display: flex;
   justify-content: space-between;
   top: 0;
-  padding: 0;
   margin-bottom: 20px;
 }
 header img {

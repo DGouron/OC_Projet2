@@ -7,7 +7,7 @@ main > section {
 }
 h1 {
   font-size: var(--title-font-size);
-  line-height: 1%;
+  font-weight: var(--title-font-weight);
 }
 h2 {
   font-size: var(--subtitle-font-size);

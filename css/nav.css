@@ -14,8 +14,8 @@ nav a {
 }
 nav :nth-child(1),
 nav a:hover {
-  border-top: 2px solid #0065fc;
-  color: #0065fc;
+  border-top: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 /*Breakpoint for laptop*/
 @media screen and (max-width: 992px) {
@@ -34,7 +34,7 @@ nav a:hover {
   nav :nth-child(1),
   nav a:hover {
     border-top: none;
-    border-bottom: 3px solid #0065fc;
-    color: #0065fc;
+    border-bottom: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
   }
 }

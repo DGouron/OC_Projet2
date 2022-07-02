@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/variables.css" />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/header.css" />
@@ -48,7 +49,10 @@
         <form action="/" method="get">
           <button><i class="fa-solid fa-location-dot"></i></button>
           <input type="text" name="search" placeholder="Marseille, France" />
-          <button type="submit">Rechercher</button>
+          <button type="submit" class="searchform--desktop-submit">Rechercher</button>
+          <button type="submit" class="searchform--mobile-submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </form>
       </section>
       <section>

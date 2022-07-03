@@ -22,7 +22,13 @@ main > section header {
 }
 .filter--container{
   display: flex;
+  flex-wrap: wrap;
   margin-top: 25px;
+}
+.filter--container h2{
+ line-height: 3;
+ margin-right: 10px;
+ font-weight: 700;
 }
 .filter--box{
   color: #000000;
@@ -39,6 +45,9 @@ main > section header {
   width: max-content;
   height: var(--filter-height);
 }
+.filter--content:hover{
+  background-color: var(--tertiary-color);
+}
 .filter--text{
   display: block;
   margin: auto 20px;
@@ -53,4 +62,20 @@ main > section header {
   padding: 10px;
   text-align: center;
   width: var(--filter-icone-width);
+}
+
+/*Breakpoint for laptop*/
+@media screen and (max-width: 992px) {
+}
+/*Breakpoint for mobile*/
+@media screen and (max-width: 768px) {
+  .filter--container h2{
+    margin-right: 100px;
+  }
+  .filter--text{
+    font-size: 12px;
+  }
+  .filter--box{
+    margin-bottom: 10px; /*Add space between rows*/
+  }
 }

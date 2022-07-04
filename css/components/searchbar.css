@@ -12,7 +12,7 @@ main section form button {
 }
 main section form input {
   border-radius: 0;
-  background-color: #FFFF;
+  background-color: #ffff;
   padding-left: 20px;
   color: var(--searchbar-color);
   font-size: calc(3px + var(--default-font-size));
@@ -36,13 +36,13 @@ main section form button[type="submit"] {
     var(--search-border-radius-size) 0px;
   background-color: var(--secondary-color);
 }
-main section form input[name="search"]{
+main section form input[name="search"] {
   width: 180px;
 }
-.searchform--mobile-submit{
+.searchform--mobile-submit {
   display: none;
 }
-.searchform--desktop-submit{
+.searchform--desktop-submit {
   display: inline;
 }
 /*Breakpoint for laptop*/
@@ -50,17 +50,17 @@ main section form input[name="search"]{
 }
 /*Breakpoint for mobile*/
 @media screen and (max-width: 768px) {
-  main section form button[name="mobile-submit"]{
+  main section form button[name="mobile-submit"] {
     width: 50px;
     height: var(--searchbar-height);
     border-radius: var(--search-border-radius-size);
     display: inline;
   }
-  .searchform--mobile-submit i{
+  .searchform--mobile-submit i {
     color: white;
     font-size: 14px;
   }
-  .searchform--desktop-submit{
+  .searchform--desktop-submit {
     display: none;
   }
 }

@@ -14,29 +14,29 @@ h2 {
   font-weight: var(--subtitle-font-weight);
 }
 main > section header {
-  padding: 0; /*Reset padding because its set at 3% right in the global css for all headers*/ 
+  padding: 0; /*Reset padding because its set at 3% right in the global css for all headers*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
 }
-.filter--container{
+.filter--container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
 }
-.filter--container h2{
- line-height: 3;
- margin-right: 10px;
- font-weight: 700;
+.filter--container h2 {
+  line-height: 3;
+  margin-right: 10px;
+  font-weight: 700;
 }
-.filter--box{
+.filter--box {
   color: #000000;
   text-decoration: none;
   margin: 0 0.5%;
   height: var(--filter-height);
 }
-.filter--content{
+.filter--content {
   border: 2px solid var(--primary-color);
   border-radius: 25px;
   display: inline-flex;
@@ -45,15 +45,15 @@ main > section header {
   width: max-content;
   height: var(--filter-height);
 }
-.filter--content:hover{
+.filter--content:hover {
   background-color: var(--tertiary-color);
 }
-.filter--text{
+.filter--text {
   display: block;
   margin: auto 20px;
   text-align: center;
 }
-.filter--icone{
+.filter--icone {
   background: var(--tertiary-color);
   border-radius: 50%;
   color: var(--secondary-color);
@@ -63,19 +63,39 @@ main > section header {
   text-align: center;
   width: var(--filter-icone-width);
 }
-
+.information--container {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+.information--container p {
+  padding-top: 8px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.information--container i {
+  color: var(--secondary-color);
+}
+.information--icone-box {
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding-top: 5px;
+  padding-left: 12px;
+}
 /*Breakpoint for laptop*/
 @media screen and (max-width: 992px) {
 }
 /*Breakpoint for mobile*/
 @media screen and (max-width: 768px) {
-  .filter--container h2{
+  .filter--container h2 {
     margin-right: 100px;
   }
-  .filter--text{
+  .filter--text {
     font-size: 12px;
   }
-  .filter--box{
+  .filter--box {
     margin-bottom: 10px; /*Add space between rows*/
   }
 }

@@ -1,9 +1,8 @@
 #activities {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 100%;
-  height: 352px;
+  height: 450px;
   background-color: #ffff;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -15,17 +14,14 @@
   justify-content: space-between;
   align-content: stretch;
   width: 100%;
-  height: 100%;
-  gap: 45px;
-  border: 1px solid green;
+  height: 450px;
 }
 .activities--content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 33%;
-  max-width: 33%;
-  height: 100%;
-  border: 1px solid red;
-  gap: 45px;
+  width: 25%;
+  max-width: 25%;
+  height: 450px;
+  padding: 15px;
 }

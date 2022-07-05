@@ -72,6 +72,7 @@
 .mostpopular--card figcaption > * {
   padding: 2px;
   font-size: 13px;
+  font-weight: 400;
 }
 .hosting--card figcaption > *:first-child,
 .mostpopular--card figcaption > *:first-child {

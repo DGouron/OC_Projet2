@@ -25,6 +25,11 @@
   #hosting {
     flex-direction: column-reverse;
   }
+  #hosting > * {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
   .hosting--container,
   .mostpopular--container {
     width: 100%;

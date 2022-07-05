@@ -1,0 +1,15 @@
+.activity--card-large {
+  width: 100%;
+  height: 100%;
+}
+.activity--card-small {
+  height: 33%;
+}
+.activity--card-medium {
+  height: 66%;
+}
+.activity--card-large,
+.activity--card-medium,
+.activity--card-small {
+  border: 1px solid blue;
+}

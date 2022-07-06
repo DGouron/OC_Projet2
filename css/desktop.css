@@ -88,12 +88,15 @@ footer {
   padding-left: 2%;
 }
 .main-header {
-  padding: 0 3%;
+  padding-top: 0;
+  padding-right: 3%;
+  padding-left: calc(var(--layout-margin) + 25px);
+  margin-bottom: var(--layout-margin);
 }
 .description--container,
 .filter--container,
 .information--container {
-  margin-left: var(--layout-margin-left);
+  margin-left: var(--layout-margin);
 }
 form > * {
   margin: 0;
@@ -212,7 +215,10 @@ section form input[name="search"] {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  margin: var(--layout-margin-left);
+  margin-top: calc(var(--layout-margin) / 2);
+  margin-bottom: calc(var(--layout-margin) / 2);
+  margin-left: var(--layout-margin);
+  margin-right: var(--layout-margin);
 }
 .host--container > * {
   background: var(--primary-color);

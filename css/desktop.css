@@ -13,8 +13,7 @@ body {
 body {
   background-color: #ffff;
 }
-header,
-main {
+header {
   padding: 0 3%;
 }
 header,
@@ -51,65 +50,9 @@ nav a {
   font-weight: 400;
   font-style: normal;
 }
-nav :nth-child(1),
 nav a:hover {
   border-top: 2px solid var(--secondary-color);
   color: var(--secondary-color);
-}
-form > * {
-  margin: 0;
-  padding: 0;
-  margin-right: -7px;
-  height: var(--searchbar-height);
-  border: none;
-}
-main section form button {
-  width: var(--searchbar-height);
-  border-radius: var(--search-border-radius-size) 0px 0px
-    var(--search-border-radius-size);
-}
-main section form input {
-  border-radius: 0;
-  background-color: #ffff;
-  padding-left: 20px;
-  color: var(--searchbar-color);
-  font-size: calc(3px + var(--default-font-size));
-  border-top: 2px solid var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-}
-main section form input:focus {
-  outline: none;
-}
-main section form input::placeholder {
-  color: var(--searchbar-color);
-  opacity: 0.8;
-  font-weight: 700;
-}
-main section form button[type="submit"] {
-  width: 120px;
-  font-size: calc(1px + var(--default-font-size));
-  font-weight: 800;
-  color: white;
-  border-radius: 0px var(--search-border-radius-size)
-    var(--search-border-radius-size) 0px;
-  background-color: var(--secondary-color);
-}
-main section form input[name="search"] {
-  width: 180px;
-}
-.searchform--mobile-submit {
-  display: none;
-}
-.searchform--desktop-submit {
-  display: inline;
-}
-footer {
-  display: flex;
-  justify-content: space-between;
-  min-width: 100%;
-  background: var(--primary-color);
-  padding-right: 30%;
-  padding-left: 2%;
 }
 main {
   display: flex;
@@ -127,12 +70,68 @@ h2 {
   font-weight: var(--subtitle-font-weight);
 }
 main > section header {
-  padding: 0; /*Reset padding because its set at 3% right in the global css for all headers*/
+  padding: 0; /*Reset padding*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  background: var(--primary-color);
+  padding-right: 30%;
+  padding-left: 2%;
+}
+form > * {
+  margin: 0;
+  padding: 0;
+  margin-right: -7px;
+  height: var(--searchbar-height);
+  border: none;
+}
+section form button {
+  width: var(--searchbar-height);
+  border-radius: var(--search-border-radius-size) 0px 0px
+    var(--search-border-radius-size);
+}
+section form input {
+  border-radius: 0;
+  background-color: #ffff;
+  padding-left: 20px;
+  color: var(--searchbar-color);
+  font-size: calc(3px + var(--default-font-size));
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+section form input:focus {
+  outline: none;
+}
+section form input::placeholder {
+  color: var(--searchbar-color);
+  opacity: 0.8;
+  font-weight: 700;
+}
+section form button[type="submit"] {
+  width: 120px;
+  font-size: calc(1px + var(--default-font-size));
+  font-weight: 800;
+  color: white;
+  border-radius: 0px var(--search-border-radius-size)
+    var(--search-border-radius-size) 0px;
+  background-color: var(--secondary-color);
+}
+section form input[name="search"] {
+  width: 180px;
+}
+.searchform--mobile-submit {
+  display: none;
+}
+.searchform--desktop-submit {
+  display: inline;
+}
+
 .filter--container {
   display: flex;
   flex-wrap: wrap;
@@ -176,6 +175,7 @@ main > section header {
   text-align: center;
   width: var(--filter-icone-width);
 }
+
 .information--container {
   display: flex;
   flex-direction: row;
@@ -196,4 +196,20 @@ main > section header {
   height: 32px;
   padding-top: 5px;
   padding-left: 12px;
+}
+.host--container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 50px;
+  border: 1px solid blue;
+}
+.host--container > * {
+  border: 1px solid red;
+}
+.host--content {
+  flex: 0 1 63%;
+}
+.host--mostpopular-box {
+  flex: 0 1 37%;
 }

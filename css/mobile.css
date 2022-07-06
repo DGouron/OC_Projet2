@@ -23,7 +23,6 @@
     text-align: center;
     border-bottom: 3px solid rgba(0, 0, 0, 0.03);
   }
-  nav :nth-child(1),
   nav a:hover {
     border-top: none;
     border-bottom: 3px solid var(--secondary-color);

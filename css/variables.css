@@ -17,7 +17,12 @@
   --filter-icone-width: 40px;
 
   --card-border-radius-size: 20px;
-  --card-figure-border-radius: 20px 20px 0 0;
+  --card-figure-border-radius-size: 20px;
+  --card-image-height: 146px;
+
+  --figcaption-content-font-size: 13px;
+  --figcaption-title-font-size: 15px;
+  --figcaption-title-font-weight: 700;
 
   /*Only for debug*/
   --debug-border: 1px solid red;

@@ -3,4 +3,7 @@
   body {
     padding: 0;
   }
+  .filter--container h2 {
+    flex: 0 1 100%;
+  }
 }

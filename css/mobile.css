@@ -1,0 +1,53 @@
+/*Breakpoint for mobile*/
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    padding: 0;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  header img {
+    top: 0;
+    gap: 10px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.03);
+  }
+  nav a:hover {
+    border-top: none;
+    border-bottom: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  main section form button[name="mobile-submit"] {
+    width: 50px;
+    height: var(--searchbar-height);
+    border-radius: var(--search-border-radius-size);
+    display: inline;
+  }
+  .searchform--mobile-submit i {
+    color: white;
+    font-size: 14px;
+  }
+  .searchform--desktop-submit {
+    display: none;
+  }
+  .filter--container h2 {
+    margin-right: 100px;
+  }
+  .filter--text {
+    font-size: 12px;
+  }
+  .filter--box {
+    margin-bottom: 10px; /*Add space between rows*/
+  }
+}

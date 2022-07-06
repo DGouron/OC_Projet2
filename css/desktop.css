@@ -225,9 +225,22 @@ section form input[name="search"] {
   border-radius: 20px;
   padding: 40px;
 }
+.host--content {
+  padding: 0;
+}
+.host--content h2 {
+  padding: 40px;
+  padding-bottom: 0px;
+}
 .host--content > * {
   padding-left: 0;
   padding-right: 0;
+}
+.host--more-link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  flex: 0 1 90%;
 }
 .host--container > * h2 {
   font-size: 20px;
@@ -236,7 +249,7 @@ section form input[name="search"] {
 .host--content,
 .host--mostpopular-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
 }

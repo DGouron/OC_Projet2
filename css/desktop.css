@@ -205,10 +205,11 @@ section form input[name="search"] {
   flex-direction: row;
   gap: 40px;
   margin: 50px;
-  border: 1px solid blue;
 }
 .host--container > * {
-  border: 1px solid red;
+  background: var(--primary-color);
+  border-radius: 20px;
+  padding: 40px;
 }
 .host--content {
   display: flex;
@@ -222,10 +223,19 @@ section form input[name="search"] {
   flex: 0 1 100%;
 }
 .host--content > article {
-  border: 1px solid green;
+  border: 1px solid var(--primary-color);
   flex: 0 1 27%;
   flex-direction: column;
+  background: #ffff;
   border-radius: var(--card-border-radius-size);
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.host--content > article:hover {
+  transform: scale(1.05);
 }
 .host--content > article img {
   height: 146px;
@@ -244,7 +254,8 @@ section form input[name="search"] {
   font-size: 15px;
   font-weight: 700;
 }
-.host--content > article figcaption p {
+.host--content > article figcaption p,
+.host--content > article figcaption i {
   font-size: 13px;
 }
 .host--mostpopular-box {
@@ -256,4 +267,11 @@ section form input[name="search"] {
 .host--container > * h2 {
   font-size: 20px;
   font-weight: 700;
+}
+.host--star-inactive {
+  color: var(--primary-color);
+}
+.host--star-active,
+.host--star-inactive:hover {
+  color: var(--secondary-color);
 }

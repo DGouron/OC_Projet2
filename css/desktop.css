@@ -1,0 +1,199 @@
+* {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--main-font-size);
+  box-sizing: border-box;
+  color: #000000;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ffff;
+}
+header,
+main {
+  padding: 0 3%;
+}
+header,
+main,
+footer {
+  width: 100%;
+}
+footer {
+  height: 100px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  margin-bottom: 20px;
+}
+header img {
+  position: relative;
+  top: 30px;
+  width: 90px;
+  height: 40px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 50px;
+}
+nav a {
+  padding: 50px 40px 0 40px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+nav :nth-child(1),
+nav a:hover {
+  border-top: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+form > * {
+  margin: 0;
+  padding: 0;
+  margin-right: -7px;
+  height: var(--searchbar-height);
+  border: none;
+}
+main section form button {
+  width: var(--searchbar-height);
+  border-radius: var(--search-border-radius-size) 0px 0px
+    var(--search-border-radius-size);
+}
+main section form input {
+  border-radius: 0;
+  background-color: #ffff;
+  padding-left: 20px;
+  color: var(--searchbar-color);
+  font-size: calc(3px + var(--default-font-size));
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+main section form input:focus {
+  outline: none;
+}
+main section form input::placeholder {
+  color: var(--searchbar-color);
+  opacity: 0.8;
+  font-weight: 700;
+}
+main section form button[type="submit"] {
+  width: 120px;
+  font-size: calc(1px + var(--default-font-size));
+  font-weight: 800;
+  color: white;
+  border-radius: 0px var(--search-border-radius-size)
+    var(--search-border-radius-size) 0px;
+  background-color: var(--secondary-color);
+}
+main section form input[name="search"] {
+  width: 180px;
+}
+.searchform--mobile-submit {
+  display: none;
+}
+.searchform--desktop-submit {
+  display: inline;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  background: var(--primary-color);
+  padding-right: 30%;
+  padding-left: 2%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+main > section {
+  margin-top: 20px;
+}
+h1 {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+}
+h2 {
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--subtitle-font-weight);
+}
+main > section header {
+  padding: 0; /*Reset padding because its set at 3% right in the global css for all headers*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.filter--container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.filter--container h2 {
+  line-height: 3;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.filter--box {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 0.5%;
+  height: var(--filter-height);
+}
+.filter--content {
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  display: inline-flex;
+  font-weight: bold;
+  transition: 0.5s;
+  width: max-content;
+  height: var(--filter-height);
+}
+.filter--content:hover {
+  background-color: var(--tertiary-color);
+}
+.filter--text {
+  display: block;
+  margin: auto 20px;
+  text-align: center;
+}
+.filter--icone {
+  background: var(--tertiary-color);
+  border-radius: 50%;
+  color: var(--secondary-color);
+  height: var(--filter-height);
+  margin: -2px;
+  padding: 10px;
+  text-align: center;
+  width: var(--filter-icone-width);
+}
+.information--container {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+.information--container p {
+  padding-top: 8px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.information--container i {
+  color: var(--secondary-color);
+}
+.information--icone-box {
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding-top: 5px;
+  padding-left: 12px;
+}

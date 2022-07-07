@@ -306,7 +306,8 @@ section form input[name="search"] {
     var(--card-figure-border-radius-size) 0px 0px;
 }
 .host--mostpopular-box > article img {
-  flex: 0 1 40%;
+  flex: 0 1 100%;
+  min-width: 40%;
   border-radius: var(--card-figure-border-radius-size) 0px 0px
     var(--card-figure-border-radius-size);
 }
@@ -319,7 +320,7 @@ section form input[name="search"] {
   justify-content: space-between;
   line-height: 1.2;
   flex-direction: column;
-  flex: 0 1 60%;
+  flex: 0 1 100%;
   padding: 10px;
 }
 .host--content > article figcaption h3,

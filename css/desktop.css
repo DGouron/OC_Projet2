@@ -58,6 +58,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+figure {
+  margin: 0;
+}
 main > section {
   margin-top: 20px;
 }
@@ -91,7 +94,7 @@ footer {
   padding-top: 0;
   padding-right: 3%;
   padding-left: calc(var(--layout-margin) + 25px);
-  margin-bottom: var(--layout-margin);
+  margin-bottom: calc(var(--layout-margin) - 25px);
 }
 .description--container,
 .filter--container,
@@ -124,7 +127,7 @@ section form input:focus {
 }
 section form input::placeholder {
   color: var(--searchbar-color);
-  opacity: 0.8;
+  opacity: 1;
   font-weight: 700;
 }
 section form button[type="submit"] {
@@ -152,7 +155,6 @@ section form input[name="search"] {
   margin-top: 25px;
 }
 .filter--container h2 {
-  line-height: 3;
   margin-right: 10px;
   font-weight: 700;
 }
@@ -196,7 +198,7 @@ section form input[name="search"] {
   font-size: 15px;
 }
 .information--container p {
-  padding-top: 8px;
+  margin-top: 8px;
   margin-left: 10px;
   font-weight: 400;
 }
@@ -319,7 +321,6 @@ section form input[name="search"] {
   flex-direction: column;
   flex: 0 1 60%;
   padding: 10px;
-  padding-right: 50px;
 }
 .host--content > article figcaption h3,
 .host--mostpopular-box > article figcaption h3 {

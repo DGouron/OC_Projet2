@@ -18,14 +18,33 @@ main,
 footer {
   width: 100%;
 }
-footer {
-  height: 100px;
-}
 header {
   display: flex;
   justify-content: space-between;
   top: 0;
   margin-bottom: 20px;
+}
+footer {
+  height: auto;
+  width: 100%;
+  background: var(--primary-color);
+}
+.footer--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 20px;
+}
+.footer--list > * {
+  flex: 1 1 33%;
+  list-style: none;
+  line-height: 2;
+}
+footer > div ul header {
+  display: block;
+  font-size: var(--footer-title-font-size);
+  font-weight: var(--footer-title-font-weight);
 }
 .description--container > header {
   flex-direction: column;
@@ -58,6 +77,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+a {
+  text-decoration: none;
+}
 figure {
   margin: 0;
 }
@@ -81,14 +103,6 @@ main > section header {
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
-}
-footer {
-  display: flex;
-  justify-content: space-between;
-  min-width: 100%;
-  background: var(--primary-color);
-  padding-right: 30%;
-  padding-left: 2%;
 }
 .main-header {
   padding-top: 0;
@@ -213,14 +227,16 @@ section form input[name="search"] {
   padding-top: 5px;
   padding-left: 12px;
 }
-.host--container {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
+.container--margin {
   margin-top: calc(var(--layout-margin) / 2);
   margin-bottom: calc(var(--layout-margin) / 2);
   margin-left: var(--layout-margin);
   margin-right: var(--layout-margin);
+}
+.host--container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 .host--container > * {
   background: var(--primary-color);
@@ -244,9 +260,10 @@ section form input[name="search"] {
   font-weight: 700;
   flex: 0 1 90%;
 }
-.host--container > * h2 {
-  font-size: 20px;
-  font-weight: 700;
+.host--container > * h2,
+.activities--container > * h2 {
+  font-size: var(--container-title-font-size);
+  font-weight: var(--container-title-font-weight);
 }
 .host--content,
 .host--mostpopular-box {
@@ -283,16 +300,8 @@ section form input[name="search"] {
 .host--mostpopular-box > article {
   border: 1px solid var(--primary-color);
   background: #ffff;
-  transition: 0.5s;
   cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: var(--card-border-radius-size);
-}
-.host--content > article:hover,
-.host--mostpopular-box > article:hover {
-  transform: scale(1.05);
 }
 .host--content > article img,
 .host--mostpopular-box > article img {
@@ -314,7 +323,8 @@ section form input[name="search"] {
 }
 .host--content > article figcaption {
   padding: 5px;
-  line-height: 1.4;
+  line-height: 1;
+  padding-left: 20px;
 }
 .host--mostpopular-box > article figcaption {
   display: flex;
@@ -347,4 +357,79 @@ section form input[name="search"] {
 }
 .host--star-container {
   align-self: flex-start;
+}
+.activities--container {
+  height: 600px;
+}
+.activities--list {
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  color: black;
+  text-decoration: none;
+}
+.activities--list > .activities--content-card,
+.activities--box {
+  width: 22.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.activities--box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.activities--content-card {
+  display: block;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.activities--content-card > figure {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 100%;
+}
+.activities--content-card > * img {
+  overflow-y: hidden;
+  height: 100%;
+  object-fit: cover;
+}
+.activities--content-card figure figcaption {
+  font-size: var(--figcaption-title-font-size);
+  font-weight: var(--figcaption-title-font-weight);
+  margin-top: -4px;
+  padding: 15px 0 0 15px;
+  min-height: 56px;
+  max-height: 56px;
+}
+.activity--card-big {
+  height: auto;
+}
+.activity--card-big figure img {
+  max-height: 440px;
+}
+.activity--card-medium {
+  height: auto;
+  display: flex;
+  flex: 1 1 60%;
+}
+.activity--card-small {
+  display: flex;
+  height: auto;
+  flex: 1 1 40%;
+}
+.card--shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.card--animation {
+  transition: 0.5s;
+}
+.card--animation:hover {
+  transform: scale(1.05);
 }

@@ -22,10 +22,14 @@
   --card-figure-border-radius-size: 20px;
   --card-image-height: 146px;
 
-  --figcaption-content-font-size: 13px;
-  --figcaption-title-font-size: 15px;
-  --figcaption-title-font-weight: 700;
+  --figcaption-content-font-size: 14px;
+  --figcaption-title-font-size: 16px;
+  --figcaption-title-font-weight: 800;
+  --footer-title-font-size: 16px;
+  --footer-title-font-weight: 800;
 
+  --container-title-font-size: 20px;
+  --container-title-font-weight: 700;
   /*Only for debug*/
   --debug-border: 1px solid red;
 }

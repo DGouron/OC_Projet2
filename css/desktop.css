@@ -41,7 +41,7 @@ footer {
   list-style: none;
   line-height: 2;
 }
-footer > div ul header {
+footer > div ul h2 {
   display: block;
   font-size: var(--footer-title-font-size);
   font-weight: var(--footer-title-font-weight);

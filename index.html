@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
@@ -31,8 +29,6 @@
       <img
         src="./assets/logo/Booki.png"
         alt="Logo du site Booki"
-        name="Logo
-      Booki"
         title="Logo du site Booki"
       />
       <nav>
@@ -45,8 +41,8 @@
         <h1>Trouvez votre hébergement pour les vacances de rêve</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
       </header>
-      <form action="/" method="" target="_self">
-        <button type="hidden" name="Icone de localisation pour la recherche">
+      <form action="/" method="GET" target="_self">
+        <button name="Icone de localisation pour la recherche">
           <i class="fa-solid fa-location-dot"></i>
         </button>
         <input type="text" name="search" placeholder="Marseille, France" />
@@ -108,8 +104,6 @@
                 <img
                   src="./assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                   alt="Auberge La Cannebière"
-                  name="Auberge La Cannebière"
-                  title="Auberge La Cannebière"
                 />
                 <figcaption>
                   <h3>Auberge La Cannebière</h3>
@@ -372,18 +366,18 @@
     <footer>
       <div class="footer--list">
         <ul>
-          <h2>A propos</h2>
+          <span class="footer--list-header">A propos</span>
           <li><a href="#">Fonctionnement du site</a></li>
           <li><a href="#">Conditions générales de vente</a></li>
           <li><a href="#">Données et confidentialité</a></li>
         </ul>
         <ul>
-          <h2>Nos hébergements</h2>
+          <span class="footer--list-header">Nos hébergements</span>
           <li><a href="#">Charte qualité</a></li>
           <li><a href="#">Soumettre votre hôtel</a></li>
         </ul>
         <ul>
-          <h2><a href="#">Assistance</a></h2>
+          <span class="footer--list-header"><a href="#">Assistance</a></span>
           <li><a href="#">Centre d'aide</a></li>
           <li><a href="#">Nous contacter</a></li>
         </ul>

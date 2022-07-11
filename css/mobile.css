@@ -68,7 +68,7 @@
     font-size: calc(6px + var(--default-font-size));
   }
   section form input[name="search"] {
-    width: auto;
+    width: 220px;
   }
   .searchform--mobile-submit {
     display: inline;
@@ -82,6 +82,14 @@
   }
   .searchform--desktop-submit {
     display: none;
+  }
+  .description--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .description--container form {
+    margin: 0;
+    align-self: center;
   }
   .filter--container h2 {
     margin-right: 100px;

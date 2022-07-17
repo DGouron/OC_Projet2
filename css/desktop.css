@@ -18,11 +18,13 @@ li {
   justify-content: space-between;
   position: relative;
   padding-left: 50px;
+  margin-bottom: 30px;
 }
 .main-header img {
   width: 100px;
   height: 50px;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
 }
 nav {
   display: flex;
@@ -33,7 +35,7 @@ nav {
   margin-right: 100px;
 }
 nav a {
-  padding: 30px 40px 0 40px;
+  padding: 40px 40px 0 40px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -69,8 +71,8 @@ form {
   background: var(--primary-color);
   width: 50px;
   height: 50px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .form__location--icone {
   font-size: 18px;
@@ -84,19 +86,20 @@ input[name="search"] {
 input[name="search"]:focus {
   outline: none;
 }
+input[name="search"]:focus,
 input[name="search"]::placeholder {
   opacity: 1;
   color: black;
   font-weight: 700;
-  padding-left: 15px;
+  padding-left: 20px;
   font-size: 18px;
 }
 .searchform__submit--desktop {
-  flex-basis: 9%;
+  flex-basis: 8%;
   background: var(--secondary-color);
   border: none;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   color: white;
   font-size: 18px;
   font-weight: 700;
@@ -105,6 +108,51 @@ input[name="search"]::placeholder {
 }
 .searchform__submit--mobile {
   display: none;
+}
+.filter__container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.filter__container h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.filter__element--content {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  border: 2px solid var(--primary-color);
+  border-left: 0;
+  border-radius: 30px;
+  height: 50px;
+
+  transition: 1s;
+}
+.filter__element--content:hover {
+  background: var(--tertiary-color);
+  color: grey;
+}
+.filter__icone--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--tertiary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.filter__element--icone {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+.filter__element--text {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 15px;
 }
 /* Main design*/
 

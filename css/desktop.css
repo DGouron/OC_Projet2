@@ -69,8 +69,8 @@ form {
   justify-content: center;
   align-items: center;
   background: var(--primary-color);
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -90,7 +90,7 @@ input[name="search"]:focus,
 input[name="search"]::placeholder {
   opacity: 1;
   color: black;
-  font-weight: 700;
+  font-weight: 800;
   padding-left: 20px;
   font-size: 18px;
 }
@@ -102,7 +102,7 @@ input[name="search"]::placeholder {
   border-bottom-right-radius: 15px;
   color: white;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px;
   cursor: pointer;
 }
@@ -119,7 +119,7 @@ input[name="search"]::placeholder {
 }
 .filter__container h2 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .filter__element--content {
   display: flex;
@@ -151,13 +151,111 @@ input[name="search"]::placeholder {
 }
 .filter__element--text {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   padding-left: 15px;
 }
+.information__container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+.information__icone-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.information__icone-box i{
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+.information__container p{
+  font-size: 18px;
+  font-weight: 500;
+}
 /* Main design*/
-
-/* Footer design*/
-
+.hotel__wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+}
+.hotel__list,
+.hotel__mostpopular--box{
+  display: flex;
+  background: var(--primary-color);
+  border-radius: 20px;
+}
+.hotel__list{
+  flex: 0 0 66%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.hotel__list header{
+  flex: 0 1 100%;
+}
+.hotel__list header h2{
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.hotel__list > article{
+  flex: 0 1 29%;
+  height: fit-content;
+  background: white;
+}
+.hotel__list > * img,
+.hotel__mostpopular--box > * img{
+  object-fit: cover;
+  width: 100%;
+  height: 145px;
+}
+.hotel__list article,
+.hotel__list > * figure{
+  border-radius: 30px;
+}
+.hotel__list > * figure{
+  margin: 7px;
+  overflow: hidden;
+}
+.hotel__list > * figcaption{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.hotel__showmore--link{
+  flex: 0 1 100%;
+}
+.hotel__mostpopular--box{
+  flex: 0 0 34%;
+  flex-direction: column;
+  justify-content: center;
+}
+.hotel__mostpopular--box > article{
+  flex: 0 1 33%;
+  background: white;
+  height: 45px;
+}
+.card--animation{
+  transition: .3s;
+}
+.card--animation:hover{
+  transform: scale(1.02);
+}
+.card--shadow{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
 .host__star--inactive {
   color: var(--primary-color);
 }
@@ -165,3 +263,6 @@ input[name="search"]::placeholder {
 .host__star--inactive:hover {
   color: var(--secondary-color);
 }
+/* Footer design*/
+
+

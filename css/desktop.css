@@ -189,6 +189,9 @@ input[name="search"]::placeholder {
   padding-right: 50px;
   margin-top: 20px;
 }
+.hotel__wrapper > * h3{
+  font-size: 16px;
+}
 .hotel__list,
 .hotel__mostpopular--box {
   display: flex;
@@ -239,10 +242,14 @@ input[name="search"]::placeholder {
   padding-left: 20px;
 }
 .hotel__showmore--link {
-  flex: 0 1 100%;
+  flex: 0 1 20%;
+  padding: 30px;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
 }
 .hotel__mostpopular--box {
-  flex: 0 0 30%;
+  flex: 0 0 33%;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -264,21 +271,27 @@ input[name="search"]::placeholder {
   padding-top: 20px;
   padding-right: 50px;
 }
+.hotel__mostpopular--box > * figcaption{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
 .hotel__mostpopular--box > * img {
   height: 146px;
   object-fit: cover;
-  overflow-y: hidden;
-  width: 146px;
+  width: 30%;
+  min-width: 130px;
   padding: 5px;
   border-radius: 20px 0 0 20px;
 }
 .hotel__mostpopular--box figure {
   display: flex;
   justify-content: stretch;
-  gap: 20px;
+  gap: 15px;
   margin: 0;
 }
-.hotel__mostpopular--box figure .host--star-container {
+.hotel__mostpopular--box figure {
   align-self: flex-end;
 }
 .card--animation {
@@ -288,7 +301,7 @@ input[name="search"]::placeholder {
   transform: scale(1.02);
 }
 .card--shadow {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45);
 }
 .host__star--inactive {
   color: #d3d3d3;

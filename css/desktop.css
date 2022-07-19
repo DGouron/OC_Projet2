@@ -242,7 +242,7 @@ input[name="search"]::placeholder {
   padding-left: 20px;
 }
 .hotel__showmore--link {
-  flex: 0 1 20%;
+  flex: 1 1 10%;
   padding: 30px;
   padding-top: 15px;
   font-size: 16px;
@@ -311,9 +311,16 @@ input[name="search"]::placeholder {
   color: var(--secondary-color);
 }
 .activities__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 20px;
+}
+.activities__wrapper header {
+  flex: 1 1 100%;
 }
 .activities__wrapper > * h2{
   font-size: 22px;

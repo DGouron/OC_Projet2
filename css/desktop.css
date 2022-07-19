@@ -310,4 +310,14 @@ input[name="search"]::placeholder {
 .host__star--inactive:hover {
   color: var(--secondary-color);
 }
+.activities__wrapper{
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+}
+.activities__wrapper > * h2{
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 40px;
+}
 /* Footer design*/

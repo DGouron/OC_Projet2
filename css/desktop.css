@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -40,6 +43,7 @@ nav a {
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
+  border-top: 2px solid transparent;
 }
 nav a:hover {
   border-top: 2px solid var(--secondary-color);
@@ -202,7 +206,7 @@ input[name="search"]::placeholder {
   flex: 0 0 66%;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 .hotel__list header {
   flex: 0 1 100%;
@@ -215,8 +219,7 @@ input[name="search"]::placeholder {
   margin-left: 40px;
 }
 .hotel__card--container {
-  flex: 0 0 30%;
-  height: fit-content;
+  flex: 0 0 27%;
   border-radius: 20px;
 }
 .hotel__card--container > * figure {
@@ -228,6 +231,7 @@ input[name="search"]::placeholder {
   height: 146px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
+  image-rendering: auto;
 }
 .hotel__card--container > * figcaption * {
   /*Reset because the normalizer add a margin/padding to title and p*/
@@ -260,7 +264,6 @@ input[name="search"]::placeholder {
 }
 .hotel__mostpopular--box > article {
   background: white;
-  height: auto;
   margin-left: 40px;
   margin-right: 40px;
   border-radius: 20px;
@@ -273,26 +276,23 @@ input[name="search"]::placeholder {
 }
 .hotel__mostpopular--box > * figcaption{
   display: flex;
+  flex: 1 1 60%;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 10px;
 }
 .hotel__mostpopular--box > * img {
+  flex: 1 40%;
   height: 146px;
   object-fit: cover;
-  width: 30%;
-  min-width: 130px;
   padding: 5px;
   border-radius: 20px 0 0 20px;
+  image-rendering: auto;
 }
 .hotel__mostpopular--box figure {
   display: flex;
-  justify-content: stretch;
   gap: 15px;
   margin: 0;
-}
-.hotel__mostpopular--box figure {
-  align-self: flex-end;
 }
 .card--animation {
   transition: 0.3s;
@@ -318,6 +318,7 @@ input[name="search"]::placeholder {
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 20px;
+  height: auto;
 }
 .activities__wrapper header {
   flex: 1 1 100%;
@@ -326,5 +327,71 @@ input[name="search"]::placeholder {
   font-size: 22px;
   font-weight: 800;
   margin-top: 40px;
+}
+.activities__list{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+.activities__box {
+  flex: 1 1 0; /*Allow same width for all cards*/
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 20px;
+  height: 450px;
+}
+.activity__card--big,
+.activity__card--medium{
+  flex: 60;
+}
+.activity__card--small{
+  flex: 40;
+}
+.activity__card--small > * img{
+  object-position: 0 -8px; /* Compromise between xl desk scree and medium desk screen*/
+}
+.card__img--center{
+  object-position: center;
+}
+.card__img--top{
+  object-position: 0 0px;
+}
+.activity__card--medium > * img:not(.card__img--center, .card__img--top){
+  object-position: 0 -15px;
+}
+.activities__box a figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+.activities__box > * figure img {
+  flex: 1 1 0;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  object-fit: cover;
+  image-rendering: auto;
+}
+.activities__box > * figcaption {
+  flex: 1 1 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  min-height: 56px;
+  max-height: 60px;
+  color: black;
+  font-size: 16px;
+  font-weight: 800;
+} 
+.activities__box > *{
+  border-radius: 20px;
+}
+.card--bright {
+  filter: brightness(1.4);
 }
 /* Footer design*/

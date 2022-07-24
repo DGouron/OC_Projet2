@@ -395,3 +395,21 @@ input[name="search"]::placeholder {
   filter: brightness(1.4);
 }
 /* Footer design*/
+.footer__wrapper{
+  display: flex;
+  background: var(--primary-color);
+  margin-top: 50px;
+}
+.footer__wrapper > *{
+  flex: 1;
+  margin-top: 40px;
+}
+.footer__list--header{
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.footer__wrapper ul li:not(.footer__list--header){
+  margin-bottom: 10px;
+  font-weight: 600;
+}

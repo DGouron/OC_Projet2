@@ -48,25 +48,28 @@
         font-size: 18px;
     }
     .filter__container{
-        margin-left: 25px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
         gap: 10px;
+        width: 90%;
+        margin-left: 25px;
+        margin-right: 25px;
         margin-top: 20px;
     }
     .filter__element--content{
-        height: 40px;
+        height: 50px;
         padding-right: 20px;
     }
     .filter__icone--box{
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .filter__container h2{
         flex: 1 1 100%;
     }
     .filter__element--text{
-        font-size: 14px;
+        font-size: calc(.6rem + 1vw); /*Responsive font size for small mobile and accessibility*/;
         font-weight: 800;
     }
     .information__container{
@@ -88,8 +91,11 @@
         gap: 10px;
         margin-bottom: 40px;
     }
+    .hotel__wrapper > * h3{
+        font-size: calc(.5rem + 2vw); /*Responsive font size for small mobile and accessibility*/
+    }
     .hotel__wrapper > * p{
-        font-size: 14px;
+        font-size: 13px;
     }
     .hotel__list{
         flex: 0 0 100%;

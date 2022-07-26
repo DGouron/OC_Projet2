@@ -85,7 +85,6 @@ form {
   font-size: 18px;
 }
 input[name="search"] {
-  flex-basis: 14%;
   border: none;
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);

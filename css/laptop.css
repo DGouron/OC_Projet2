@@ -1,3 +1,42 @@
 /*Breakpoint for laptop*/
 @media screen and (max-width: 992px) {
+    form{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .filter__container{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    .filter__container h2{
+        flex: 100%;
+    }
+    .hotel__wrapper{
+        flex-direction: column;
+        margin: 0;
+        padding: 5px;
+    }
+    .hotel__list{
+        gap: 10px;
+        padding: 5px;
+    }
+    .hotel__card--container{
+        flex: 1 1 45%;
+    }
+    .hotel__mostpopular--box{
+        order: -1;
+    }
+    .hotel__mostpopular--list{
+        gap: 10px;
+    }
+    .activities__list{
+        flex-wrap: wrap;
+    }
+    .activities__box{
+        flex: 1 1 45%;
+    }
+    .activities__list :nth-child(3n){
+        order: 1;
+    }
 }

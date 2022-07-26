@@ -92,7 +92,6 @@ input[name="search"] {
 input[name="search"]:focus {
   outline: none;
 }
-input[name="search"]:focus,
 input[name="search"]::placeholder {
   opacity: 1;
   color: black;
@@ -187,12 +186,14 @@ input[name="search"]::placeholder {
   font-weight: 500;
 }
 /* Main design*/
+main{
+  width: 90%;
+  margin: auto;
+}
 .hotel__wrapper {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
   margin-top: 20px;
 }
 .hotel__wrapper > * h3{
@@ -324,8 +325,6 @@ input[name="search"]::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
   margin-top: 20px;
   height: auto;
 }

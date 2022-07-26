@@ -6,20 +6,34 @@
     }
     .filter__container{
         flex-wrap: wrap;
-        gap: 20px;
-        justify-content: flex-start;
+        width: auto;
+        gap: 10px;
+        justify-content: space-around;
     }
     .filter__container h2{
         flex: 100%;
     }
+    .filter__element--content{
+        height: 40px;
+    }
+    .filter__element--text{
+        font-size: 12px;
+    }
+    .filter__icone--box{
+        width: 40px;
+        height: 40px;
+    }
+    main{
+        width: 100%;
+      }
     .hotel__wrapper{
         flex-direction: column;
         margin: 0;
         padding: 5px;
     }
     .hotel__list{
-        gap: 10px;
-        padding: 5px;
+        gap: 40px;
+        padding: 30px;
     }
     .hotel__card--container{
         flex: 1 1 45%;
